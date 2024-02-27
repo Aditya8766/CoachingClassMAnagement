@@ -1,0 +1,127 @@
+.footer-container {
+  background-color: #1a1a1a;
+
+  .footer-contact-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  
+    .footer-contact-info {
+      color: #fff;
+      // padding: 2rem 0;
+      width: 100%;
+  
+      .contact-info {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+  
+        .contact-info-icon {
+          color: rgb(25, 118, 210);
+          margin-right: 0.7rem;
+        }
+  
+        p {
+          margin: 0;
+          width: 60%;
+        }
+      }
+  
+      @media screen and (min-width: 768px) {
+        padding: 2rem 4rem;
+        width: 48%;
+      }
+    }
+  
+    .form-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 96%;
+  
+      @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+        align-items: center;
+        width: 52%;
+        margin-right: 5rem;
+      }
+  
+      h3 {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      form {
+        width: 60%;
+
+        .form-group {
+          margin-bottom: 1.5rem;
+
+          label {
+            color: #fff;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+          }
+        }
+
+        button[type="submit"] {
+          padding: 0.5rem 1rem;
+          background-color: rgb(25, 118, 210);
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+    .map-container{
+      padding-right: 5rem;
+      
+      @media screen and (max-width: 768px) {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+      }
+    }
+  }
+
+  .footer-last-section {
+    align-items: center;
+    border-top: 1px solid #292929;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    .footer-links {
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      width: 180px;
+
+      .footer-icons {
+        color: rgb(25, 118, 210);
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+}

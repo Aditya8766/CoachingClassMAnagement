@@ -1,0 +1,77 @@
+.mui-modal {
+  .modal {
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      padding: 0.25rem;
+      input {
+        padding: 7px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+    }
+    .form-group-button {
+      display: flex;
+      justify-content: flex-end;
+      .submit {
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 4px;
+        margin-right: 1rem;
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+        &:hover {
+          background-color: #fff;
+          color: black;
+          border: 1px solid black;
+        }
+      }
+      .cancel {
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 4px;
+        margin-right: 1rem;
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+        &:hover {
+          background-color: #fff;
+          color: black;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .modal {
+    width: 70%;
+    form {
+      display: flex;
+      flex-direction: column;
+      .form-group {
+        label {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+
+        input {
+          display: block;
+          width: 100%;
+          padding: 5px;
+          font-size: 14px;
+        }
+        .form-group-button {
+          .submit {
+            width: 100%;
+          }
+          .cancel {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

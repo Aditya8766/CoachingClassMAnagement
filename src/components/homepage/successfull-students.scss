@@ -1,0 +1,115 @@
+.expert-students {
+  background-color: #B7CCD7;
+  color: #333;
+  h3 {
+    font-size: 50px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+  .slogan {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+  .material-icon {
+    transform: rotate(180deg);
+  }
+  h4 {
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+  }
+  .boxes {
+    display: flex;
+    justify-content: center;
+    .box {
+      position: relative;
+      padding: 0;
+      width: 300px;
+      display: block;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 3rem;
+      padding: 20px;
+      border-radius: 5px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition-delay: 0s;
+      transition-duration: 0.4s;
+      &:hover {
+        opacity: 1;
+        transform: translateY(-50px);
+      }
+      span {
+        color: #000;
+        font-weight: 600;
+      }
+      .content {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: large;
+        color: #333;
+        font-weight: 600;
+        background-color: #DAE6EE;
+        height: 250px;
+        transition: all 400ms ease-out;
+        text-align: center;
+        &:hover {
+          opacity: 1;
+        }
+        .text {
+          height: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expert-students {
+    h3 {
+      font-size: 40px;
+    }
+    h4 {
+      span {
+        width: 52%;
+      }
+    }
+    .box {
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .expert-students {
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      span {
+        width: 52%;
+      }
+    }
+    .boxes {
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+}

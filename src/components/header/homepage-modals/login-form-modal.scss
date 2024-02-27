@@ -1,0 +1,52 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  border: 2px solid #000;
+  box-shadow: 24;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  button[type="submit"] {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: black;
+      border: 1px solid black;
+    }
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+  }
+}

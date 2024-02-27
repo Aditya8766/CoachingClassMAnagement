@@ -1,0 +1,28 @@
+.why-abacus {
+  background-image: url("../../assets/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  hr {
+    width: 24px;
+    margin-left: 0rem;
+    border: 1px solid black;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .texts {
+    .material-icon {
+      color: #333;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+    span {
+      font-size: 20px;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+}
